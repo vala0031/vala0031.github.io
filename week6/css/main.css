@@ -1,6 +1,9 @@
 body {
     color: darkslategrey;
     font-family: Arial, Helvetica, sans-serif;
+    /* adding background image 
+    background-image: url(/week6/images/white_brick_wall.png); OJO this method could send you off track, it may or may not work. */
+    background-image: url(../images/white_brick_wall.png);
 }
 
 /* 
@@ -37,7 +40,11 @@ nav ul a {
 
 /* Selecting element with id value */
 #treatofweek {
-    background-color: orange;
+    /* ALWAYS USE A BACKGROUND COLOR IN CASE IMAGE IS BROKEN LINK 
+    SUPPORT OLDER BROWSER WITH background-size: cover;*/
+    background: orange url(../images/bread.jpg) no-repeat center center;
+    background-size: cover;
+    color: white;
 }
 
 /* Selecting elements with class value */
