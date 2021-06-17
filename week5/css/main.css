@@ -1,0 +1,13 @@
+body{
+    color:red;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+This is a CSS Comment
+Shortcut for adding a comment command
+*/
+
+h1, h2, h3 { color:blueviolet; background-color:darkblue;}
+
+p { background-color: darkgreen;}

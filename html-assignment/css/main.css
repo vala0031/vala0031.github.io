@@ -1,0 +1,50 @@
+/* Inheritance*/
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+/* Selecting multiple elements*/
+h1, h2, h3, footer {background-color: darkgreen;}
+
+/* Class selector */
+.site-title {
+    color:rgb(255, 255, 255);
+}
+
+/* ID selector 
+Box Shadow (do Not use Comas) offset-x | offset-y | blur-radius | spread-radius | color */
+#my-image {
+    box-shadow: 0px 0px 2px 1px black ;
+}
+
+
+
+/* Replace the bullets from the list of hobbies with squares */
+.hobbies {
+    list-style:square;
+}
+/* Using the nth-child selector - add a background to the odd list items in the hobby list */
+.hobbies li:nth-child(odd) {
+    background-color: darkgrey;
+}
+/* Styling the Navigation 
+Remove the bullets from the unordered list in navigation (only if you have used the ul tag inside the nav tag) 
+Remove the underline from the links
+Add a background and border to the links
+Change the background colour on hover or focus state of the link*/
+nav ul {
+    list-style: none;
+    
+}
+
+.navi {
+    text-decoration: none;
+    background-color: darkgreen;
+    border: 2px dashed rgb(238, 182, 0);
+     
+}
+nav ul a:hover,
+nav ul a:focus 
+ {
+    background-color: white;
+}

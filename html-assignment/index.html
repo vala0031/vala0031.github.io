@@ -5,17 +5,19 @@
     <!--This is the Main Header-->
     <meta charset="UTF-8">
     <title>Jose Valadez </title>
+    <link href="css/main.css" rel="stylesheet">
+    
 </head>
 
 <body>
     <!-- Site Header -->
     <header>
-        <h1>About Me</h1>
+        <h1 class="site-title">About Me</h1>
         <!-- Adding a navigation -->
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="notes.html">Notes</a></li>
+            <ul >
+                <li><a class="navi" href="index.html">Home</a></li>
+                <li><a class="navi" href="notes.html">Notes</a></li>
             </ul>
         </nav>
     </header>
@@ -24,7 +26,7 @@
         <article>
             <h2>Personal Description</h2>
 <!-- ADDING AN IMAGE -->
-<img src="images/img_about_me.jpg" alt="personal photo jose valadez" title="Jose Valadez" width="250", height="300"  />
+<img id="my-image" src="images/img_about_me.jpg" alt="personal photo jose valadez" title="Jose Valadez" width="250", height="300" />
 
             <p>
                 My name is José Valadez. I’m 35 years old, father of three kids, all of them under 5 years old. I have
@@ -51,7 +53,7 @@
                 
                 <h3>Hobbies</h3>
                 <!-- Adding unordered list of hobbies -->
-                <ul>
+                <ul class="hobbies">
                   <li>Product Photography</li>
                   <li>Baking Bread</li>
                   <li>Gardening</li>
