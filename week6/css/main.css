@@ -39,13 +39,25 @@ nav ul a {
 }
 
 /* Selecting element with id value */
-#treatofweek {
-    /* ALWAYS USE A BACKGROUND COLOR IN CASE IMAGE IS BROKEN LINK 
+   /* ALWAYS USE A BACKGROUND COLOR IN CASE IMAGE IS BROKEN LINK 
     SUPPORT OLDER BROWSER WITH background-size: cover;*/
+#treatofweek {
+ 
+
     background: orange url(../images/bread.jpg) no-repeat center center;
     background-size: cover;
-    color: white;
+    color: rgb(255, 255, 255);
+
+    font-size: 1.25rem;
+/* 1.25 x 16 (default) = 20px */
+/* 1em = 20px */
+padding: 1em;
+
+
+
 }
+
+
 
 /* Selecting elements with class value */
 .orange-link {
