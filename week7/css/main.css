@@ -6,6 +6,26 @@ body {
     background-image: url(../images/white_brick_wall.png);
 }
 
+.container {
+    max-width:1200;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+/*Display and Box Sizing */
+nav ul li{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 49%;
+    padding: 1em;
+}
+nav ul a {
+    display: block;
+}
+
 /* 
     This is a CSS Comment
     Shortcut for adding then comment Command + / or Control + /
@@ -37,12 +57,19 @@ nav ul a {
     color: inherit;
     text-decoration: none;
 }
+/* Select two classes at the same time, put the first + . (with no space) + second class) */
+.orange-link.large-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
 
 /* Selecting element with id value */
    /* ALWAYS USE A BACKGROUND COLOR IN CASE IMAGE IS BROKEN LINK 
     SUPPORT OLDER BROWSER WITH background-size: cover;*/
 #treatofweek {
- 
+    /*always use position absolute and relative */
+ position: relative;
 
     background: orange url(../images/bread.jpg) no-repeat center center;
     background-size: cover;
@@ -51,7 +78,7 @@ nav ul a {
     font-size: 1.25rem;
 /* 1.25 x 16 (default) = 20px */
 /* 1em = 20px */
-padding: 1em;
+padding: 1em 1em 5em 1em;
 
 
 
@@ -64,6 +91,28 @@ padding: 1em;
     background-color: darkslategrey;
     color: orange;
     text-decoration: none;
+    display: block;
+    padding: 1.5em;
+    width: 300px;
+}
+
+/*FLOAT */
+article,
+aside {
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid black;
+    padding: 1.5em;
+    box-sizing: border-box;
+    float: left;
+}
+aside {
+    width: 20%;
+}
+
+/* clear the float for the sections */
+section {
+    clear: both;
 }
 
 .large-text {
@@ -183,4 +232,20 @@ body footer {
 /* 0011 */
 footer.site-footer {
     background-color: teal;
+}
+
+/* CSS BOX MODEL */
+article section h3{
+    background-color: rgb(159, 140, 177);
+    padding: 1em;
+    width: 50%;
+}
+section p{
+    width: 50%;
+    /* top-bottom left-right ; Padding cannot have negative value*/
+    padding: 1em .5em;
+    /* top right bottom left (go clockwise) */
+    margin: -2em 2em 2em 2em;
+    border-bottom: 2px dashed black;
+
 }
