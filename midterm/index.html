@@ -12,37 +12,51 @@
     <div class="container">
 
         <!-- Site header -->
-        <header>
-            <!--Header - Use the image tag to add the image and position the site title on top of it-->
-            <img src="../midterm/images/lone-starfish-wide.jpg" alt="lone starfish cover">
-            <h1>Lone Starfish</h1>
-            <!-- Site navigation -->
-            <nav>
-                <a href="#home">HOME</a>
-                <a href="#story">STORY</a>
-                <a href="#contact">CONTACT</a>
+        <div class="banner">
+            <header class="sechead">
+                <!--Header - Use the image tag to add the image and position the site title on top of it-->
+                <img src="../midterm/images/lone-starfish-wide.jpg" alt="lone starfish cover">
+                <!-- FLOAT TITLE -->
+                <div class="header1">
+                    <h1>Lone Starfish</h1>
+                </div>
+        </div>
+        <!-- Site navigation -->
+        <nav class="navigation">
+            <ul>
 
-            </nav>
+               <li> <a href="#home">HOME</a> </li>
+               <li> <a href="#story">STORY</a> </li>
+               <li><a href="#contact">CONTACT</a> </li>
+            </ul>
+        </nav>
         </header>
         <!-- Main content -->
-        <main>
-            <article id="home">
-                <!--Article - Image should have the text wrapping around it-->
-                <h2>Life of a Starfish</h2>
+        <div class="secmain">
+            <main class="main1">
+                <article id="home">
+                    <!--Article - Image should have the text wrapping around it-->
+                    <h2 class="header2">Life of a Starfish</h2>
 
-                <div class="floating">
-                    <img src="../midterm/images/lone-starfish.jpg" alt="lone starfish">
-
+                    <div class="floating">
+                        <img src="../midterm/images/lone-starfish.jpg" alt="lone starfish">
+                    </div>
                     <p>
-                        Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper
-                        catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak
-                        batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue; amur pike
-                        barbeled houndshark dwarf loach beachsalmon archerfish longfin fingerfish, thornfish: plownose
+                        Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola.
+                        Snapper
+                        catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth
+                        halfbeak
+                        batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue; amur
+                        pike
+                        barbeled houndshark dwarf loach beachsalmon archerfish longfin fingerfish, thornfish:
+                        plownose
                         snipefish; rock bass sea devil trunkfish. Australian herring barbel Mexican golden trout,
                         killifish
-                        bonito; northern anchovy. Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost
+                        bonito; northern anchovy. Waryfish, "lionfish; longfin smelt; leopard danio dragonfish,"
+                        Lost
                         River
-                        chimaera gurnard. Dragon goby long-finned char bluntnose knifefish aruana eelpout elasmobranch
+                        chimaera gurnard. Dragon goby long-finned char bluntnose knifefish aruana eelpout
+                        elasmobranch
                         sucker, mojarra. Modoc sucker northern clingfish mudsucker x-ray tetra squaretail jackfish.
                         Paradise
                         fish cuchia Redhorse sucker ayu Ganges shark rockling flyingfish pearleye mahi-mahi yellow
@@ -51,70 +65,77 @@
                         hardhead
                         catfish wobbegong trench squeaker crestfish, halibut glowlight danio sailback scorpionfish
                         unicorn
-                        fish. Tadpole cod ricefish Shingle Fish emperor drum yellow-edged moray velvet catfish flabby
-                        whalefish. Featherfin knifefish plaice pike eel tarwhine Black triggerfish pearl danio cownose
+                        fish. Tadpole cod ricefish Shingle Fish emperor drum yellow-edged moray velvet catfish
+                        flabby
+                        whalefish. Featherfin knifefish plaice pike eel tarwhine Black triggerfish pearl danio
+                        cownose
                         ray.
-                        Merluccid hake, platy peamouth humuhumunukunukuapua'a barred danio. Black dragonfish, stingray
+                        Merluccid hake, platy peamouth humuhumunukunukuapua'a barred danio. Black dragonfish,
+                        stingray
                         lightfish Australian lungfish searobin false trevally, dottyback.
 
                     </p>
-                </div>
-            </article>
+                </article>
+        </div>
 
-            <!-- Open a Section for an Un ordered List-->
-
+        <!-- Open a Section for an Un ordered List-->
+        <div class="secstory">
             <section id="story">
                 <h3>Facts About Starfish</h3>
                 <!--un ordered list-->
                 <!--Facts - Use proper syntax for listing the facts-->
-                <ul>
+                <ul class="list">
                     <li>Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
                     <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
                     <li>Herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
                     <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
                 </ul>
-                <!--section for Form contact-->
-                <!-- Form - All the inputs must be linked to the relative labels.-->
-                <section id="contact">
+        </div>
+        <!--section for Form contact-->
+        <!-- Form - All the inputs must be linked to the relative labels.-->
+        <div class="secform">
+            <section id="contact">
 
-                    <h3>Contact to learn more</h3>
-                    <!--fieldset-->
-                    <fieldset>
+                <h3>Contact to learn more</h3>
+                <!--fieldset-->
+                <fieldset>
 
-                        <!--Name form-->
-                        <form action="contact.html" method="post">
-                            <label for="fullname">Your Name</label>
-                            <input id="fullname" type="text" name="fullname" required>
-                        </form>
-                        <!--Email form-->
-                        <form action="contact.html" method="post">
-                            <label for="email">Your Email</label>
-                            <input id="email" type="email" name="email" required>
-                        </form>
-                        <!--Message box-->
-                        <form action="contact.html" method="post">
-                            <label for="message">Your Message</label>
-                            <textarea name="message" id="message" cols="30" rows="4"></textarea>
-                        </form>
-                        <!--Radio Buttons-->
-                        <h4>Would you like to visit the starfish?</h4>
-                        <form action="contact.html" method="post">
-                            <label for="yes">Yes</label>
-                            <input type="radio" id="yes" name="visit" value="1">
-                            <label for="no">No</label>
-                            <input type="radio" id="no" name="visit" value="2">
-                            <label for="maybe">Maybe</label>
-                            <input type="radio" id="maybe" name="visit" value="3">
-                        </form>
-                        <!--Send Button-->
-                        <button type="submit">Send</button>
-                    </fieldset>
-                </section>
+                    <!--Name form-->
+                    <form action="contact.html" method="post">
+                        <label for="fullname">Your Name</label>
+                        <input id="fullname" type="text" name="fullname" required>
+                    </form>
+                    <!--Email form-->
+                    <form action="contact.html" method="post">
+                        <label for="email">Your Email</label>
+                        <input id="email" type="email" name="email" required>
+                    </form>
+                    <!--Message box-->
+                    <form action="contact.html" method="post">
+                        <label for="message">Your Message</label>
+                        <textarea name="message" id="message" cols="30" rows="4"></textarea>
+                    </form>
+                    <!--Radio Buttons-->
+                    <h4>Would you like to visit the starfish?</h4>
+                    <form action="contact.html" method="post">
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="yes" name="visit" value="1">
+                        <label for="no">No</label>
+                        <input type="radio" id="no" name="visit" value="2">
+                        <label for="maybe">Maybe</label>
+                        <input type="radio" id="maybe" name="visit" value="3">
+                    </form>
+                    <!--Send Button-->
+                    <button type="submit">Send</button>
+                </fieldset>
+
             </section>
+            </section>
+        </div>
         </main>
         <!-- footer -->
-        <footer>
-            &copy;Lone Starfish.
+        <footer class="secfooter">
+            &copy; Lone Starfish.
         </footer>
     </div>
 

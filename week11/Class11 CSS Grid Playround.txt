@@ -1,0 +1,149 @@
+/*********************
+	Defaults
+**********************/
+body{
+  font-family: Arial, Halvatica, sans-serif;
+}
+h1{
+  text-align: center;
+}
+section{
+	max-width: 800px;
+	margin: 0 auto 20px;
+	background-color: #CC9900;
+	border: 1px solid #666;
+}
+.box{
+	box-sizing: border-box;
+	padding: 20px;
+	text-transform: uppercase;
+	border: 1px solid #999;
+	border-radius: .5em;
+	background-color: #FFCC66;
+}
+/*****************
+  	CSS Grid
+*****************/
+.container {
+  display:grid;
+  /* grid-template-columns: 100px 200px 500px; */
+  /* grid-template-columns: 15rem 40% auto 100px; */
+ /* grid-template-columns: 1fr 2fr 3fr 2fr;*/ /*this is responsive to the aspect ratio*/
+ /* grid-template-columns: repeat(3, 1fr); repeats 3 columns with given proportions*/
+  /*grid-template-columns: repeat(3, 1fr 3fr);*/ /*repeats the 3columns with the 2 proportions given*/
+ grid-template-columns: repeat(3, 1fr);
+ grid-template-rows:repeat(2,120px);
+  
+  /*row-gap column-gap */
+  gap:1em 2em
+}
+
+.one{
+  grid-column: 1/4;
+}
+.two{
+  grid-row: 2/4;
+  grid-column: 1/2;
+}
+/*use for Homework, change the position of 5 to 3*/
+.container div:nth-child(5){
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+/*if we want to position a box on top other box, we need to define the position (grid and column) of the box going on the bottom and then proceed to define the position of the box going on top.*/ 
+.six{
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.four{
+  grid-column: 2/span 3;
+}
+
+-------------END OF FIRST LESSON -------
+
+using labels
+
+/*********************
+	Defaults
+**********************/
+body{
+  font-family: Arial, Halvatica, sans-serif;
+}
+h1{
+  text-align: center;
+}
+section{
+	max-width: 800px;
+	margin: 0 auto 20px;
+	background-color: #CC9900;
+	border: 1px solid #666;
+}
+.box{
+	box-sizing: border-box;
+	padding: 20px;
+	text-transform: uppercase;
+	border: 1px solid #999;
+	border-radius: .5em;
+	background-color: #FFCC66;
+}
+/*****************
+  	CSS Grid
+*****************/
+.container {
+  display:grid;
+  /* grid-template-columns: 100px 200px 500px; */
+  /* grid-template-columns: 15rem 40% auto 100px; */
+ /* grid-template-columns: 1fr 2fr 3fr 2fr;*/ /*this is responsive to the aspect ratio*/
+ /* grid-template-columns: repeat(3, 1fr); repeats 3 columns with given proportions*/
+  /*grid-template-columns: repeat(3, 1fr 3fr);*/ /*repeats the 3columns with the 2 proportions given*/
+ grid-template-columns: repeat(3,1fr);
+ grid-template-rows:repeat(5,120px);
+  
+ grid-template-areas:
+   "header header header"
+   "main main main"
+   "side ser1 ser1"
+   "ser2 ser2 ser3"
+   "footer footer footer"
+   ;
+  
+ /*row-gap column-gap */
+  gap:1em 1.5em
+}
+
+.one{
+  grid-area:header;
+}
+.two{
+  grid-area:main;
+}
+.three{
+  grid-area:side;
+}
+.four{
+  grid-area:ser1;
+}
+.five{
+  grid-area:ser2;
+ }
+.six{
+  grid-area:ser3;
+ }
+.seven{
+  grid-area:footer;
+}
+
+@media screen and (min-width:600px) {
+  .container{
+    grid-template-areas:
+      "header header header"
+      "side main main"
+      "side main main"
+      "ser1 ser2 ser3"
+      "footer footer footer"
+      ;
+  }
+}
+
+
+
