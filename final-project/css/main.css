@@ -286,26 +286,28 @@ p {
 .banner {
     background: url("../images/main-banner.jpg") no-repeat 100% 100%;
     background-size: 100%;
-    padding-top: 70px;
-    padding-bottom: 70px;
-    
+   height: 600px;
     justify-content: left;
+    
 }
 
 /*HEADER BTN*/
 .masthead {
+    
     display: flex;
     max-width: 1200px;
-    width: auto;
-    background: rgba(0, 0, 0, 0.5);
+    min-height:fit-content;
+        background: rgba(0, 0, 0, 0.5);
     text-align: left;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     color: white;
-    top: 100px;
+    margin: 0;
+   
+       
 }
-
+/*HEADER BTN COLOR*/
 .masthead a {
     text-decoration: none;
     display: block;
@@ -315,7 +317,7 @@ p {
     align-items: left;
     text-align: left;
     padding: 20px;
-
+    
 }
 
 /* BLACK BUTTONS*/
@@ -338,4 +340,62 @@ p {
 .about_us {
     background-color: #ffe6ac;
     padding: 10px;
+}
+
+/*SERVICES*/
+.services {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: white;
+    padding: 1em;
+}
+.services h2 {
+    margin-bottom: 0.5em;
+}
+
+/*CARDS*/
+.card{
+    background-color: #ffe6ac;
+    margin-bottom: 1em;
+}
+.digital,
+.marketing,
+.video,
+.web,
+.print
+ {
+    padding: 1em;
+}
+/*white letters in btn cards*/
+.digital .btn,
+.marketing .btn,
+.video .btn,
+.web .btn,
+.print .btn
+{
+    color: white;
+}
+
+/*OUR VISION */
+
+.our_vision {
+    background: url("../images/vision.jpg") no-repeat center center;
+    background-size: 100%;
+    margin:auto;
+   
+}
+
+.sec_vision {
+    max-width: 1200px;
+    width: auto;
+        max-height:fit-content;
+        background: rgba(0, 0, 0, 0.1);
+    text-align: left;
+    color: white;
+    padding: 1em;
+           
+}
+/*vision border*/
+.sec_vision .btn{
+    border: 1px solid #c78c06;
 }
