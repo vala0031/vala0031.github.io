@@ -188,14 +188,23 @@ color: #222;
     max-width: 1200px;
     margin: 0 auto;
     line-height: auto;
-        background: rgba(0,0,0,0.5);
+    margin: auto;
+    background: rgba(0,0,0,0.5);
     text-align: left;
   justify-content: center;
   align-items: left;
   flex-direction: column;     
     color: white;
     padding: 20px;
+}
 
-
-    
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #c78c06;
+    background-color: #c78c06;
+    color: #222;
+    border-radius: 4px;
+    padding: 20px;
+    text
 }
