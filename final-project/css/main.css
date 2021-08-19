@@ -47,3 +47,155 @@ table {
 	border-spacing: 0;
 }
 
+/* CUSTOM STYLES */
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+
+
+
+img {
+    width: 100%;
+   
+}
+.container {
+    width: 100%;
+}
+nav {
+    width: 100%;
+    background-color: #222;
+    padding-bottom: 1em;
+}
+
+a,
+a:link,
+a:visited {
+    color: inherit;
+}
+
+a:hover,
+a:focus {
+    color: #c78c06;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: bold;
+}
+
+h1 { 
+    font-size: 5.063rem;
+}
+h2 {
+    font-size: 3.375rem;
+}
+h3 {
+    font-size: 2.25rem;
+}
+h4 {
+font-size: 2rem;
+}
+h5 {
+    font-size: 1.5rem;
+}
+
+p { /*top-bottom left-right*/
+    margin: 1em 0;
+}
+
+
+/*HEADER */
+
+
+/*Navigation*/
+.nav-list li,.search-container a {
+    text-align: center;
+    color: #c78c06;
+    background-color: #222;
+        max-width: 1200px;
+        margin: 0 auto;
+     
+}
+.logostar {
+    border-bottom: solid #222;
+    text-align: left;
+    color: #c78c06;
+    background-color: #222;
+    
+}
+.logo {
+    height: 100px;
+    background: url("../images/logo.png") no-repeat left;
+    width: 100px;
+}
+
+
+/*search label none */
+.search-container label {
+    display: none;
+}
+.search-container input form {
+
+    background-color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+  font-size: auto;
+    
+}
+.im-magnifier {
+    background-color: none;
+    border: #c78c06;
+    font-size: 10px;
+}
+
+
+/*Love Hate*/
+.nav-list a,.nav-list a:link,.nav-list a:visited {
+    display: block;
+    padding: 1em 0;
+    text-decoration: #c78c06;
+    max-width: 1200px;
+    margin: 0 auto;
+  font-size: auto;
+     
+    }
+
+    .nav-list a:hover,
+    .nav-list a:focus,
+    .nav-list a.current {
+background-color: #c78c06;
+color: #222;
+
+    }
+
+.banner {
+    background: url("../images/main-banner.jpg")no-repeat center bottom;
+    background-size: cover;
+    height: max-content;
+    padding: 200px;
+    justify-content: center;
+}
+
+.masthead {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    line-height: auto;
+        background: rgba(0,0,0,0.5);
+    text-align: left;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;     
+    color: white;
+    padding: 20px;
+
+
+    
+}
