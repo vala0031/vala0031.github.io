@@ -432,7 +432,7 @@ p {
 border-bottom: solid rgb(255, 136, 0);
 margin-top: 10px;
 }
-
+/*CONTACT US*/
 .contact {
     background-color: white;
     padding: 10px;
@@ -442,7 +442,7 @@ margin-top: 10px;
     background-color: white;
     padding: 10px;
 }
-
+/*GOOGLE MAPS*/
 .location {
     background-color: white;
     padding: 10px;
@@ -462,4 +462,13 @@ footer {
         color:#c78c06;
         padding: 1em;
             
+}
+
+
+/* DESKTOP STYLE */
+
+@media screen and (min-width:760px) {
+    html {
+        font-size: 16px;
+    }
 }
